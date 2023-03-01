@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body{
+        background-color: aquamarine;
+       }
+       h1{
+        text-align: center;
+        text-decoration: underline;
+       }
+       .main input,select{
+        width:250px;
+        height:50px;
+       }
+       .content input{
+        width:20px;
+        height:20px;
+       }
+       .content label{
+        font-size:18px;
+       }
+       form{
+        height:max-content;
+        width:500px;
+        margin:auto;
+        border: 3px solid black;
+        box-shadow: 5px 10px 18px black;
+        background-color: aliceblue;
+
+       }
+       .main,.content,footer{
+        margin-left:25px;
+        font-size:20px;
+       }
+       #submit{
+        font-size: 20px;
+        width: 450px;
+       }
+    </style>
+</head>
+<body>
+    <h1>
+        Survey Form
+    </h1>
+    <form action=" ">
+        <div class="main">
+            <label for = "Name">→ Name :</label><br>
+            <input  id = "Name" type = "text" name = "First Name"><br><br>
+            <label for = "Email">→ Email :</label><br>
+            <input id = "Email" type = "email" name = "Email"><br><br>
+            <label for = "Age">→ Age :</label><br>
+            <input id = "Age" type = "number" name = "Age"><br><br>
+            <label for = "Profession">→ Which option best describes you ?</label><br>
+            <select id = "Profession" name = "Profession">
+                <option value = "Select an option">Please select an option</option>
+                <option value = "Student">Student</option>
+                <option value = "Intern">Intern</option>
+                <option value = "Professional">Professional</option>
+                <option value = "Other">Other</option>
+            </select>
+        </div>
+        <div class="content">
+            <p>→ Would you recommend geeksforgeeks to a friend</p>
+            <input id = "Yes" name = "Recommend" value = "Yes" type =  "radio">
+            <label for = "Yes">Yes</label><br>
+            <input id = "No" name = "Recommend"    value = "No" type =  "radio">
+            <label for = "No">No</label><br>
+            <input id = "Maybe" name = "Recommend" value = "Maybe" type =  "radio">
+            <label for = "Maybe">Maybe</label><br>
+            <p>→ Languages and Frameworks known(Check all that supply)</p>
+            <input id = "C" type = "checkbox" name = "C">
+            <label for = "C">C</label><br>
+            <input id = "C++" type = "checkbox" name = "C++">
+            <label for = "C++">C++</label><br>
+            <input id = "C#" type = "checkbox" name = "C#">
+            <label for = "C#">C#</label><br>
+            <input id = "Java" type = "checkbox" name = "Java">
+            <label for = "Java">Java</label><br>
+            <input id = "Python" type = "checkbox" name = "Python">
+            <label for = "Python">Python</label><br>
+            <input id = "Javascript" type = "checkbox" name = "Javascript">
+            <label for = "Javascript">Javascript</label><br>
+            <input id = "React" type = "checkbox" name = "React">
+            <label for = "React">React</label><br>
+            <input id = "Angular" type = "checkbox" name = "Aangular">
+            <label for = "Angular">Angular</label><br>
+            <input id = "Django" type = "checkbox" name = "Django">
+            <label for = "Django">Django</label><br>
+            <input id = "Spring" type = "checkbox" name = "Spring">
+            <label for = "Spring">Spring</label><br><br>
+        </div>
+        <footer>
+            <p>
+                → Any Comments Or Suggestions :
+            </p>
+            <textarea id = "Comments" name = "Comments" cols="50" rows="5"></textarea><br><br>
+            <input id = "submit" type = "submit">
+        </footer>
+    </form>
+</body>
+</html>
